@@ -16,7 +16,7 @@ pipeline{
 			}
             stage("Create EC2 Manchine"){
                  steps{
-                    sh ''' yum install terraform -y
+                    sh '''sudo yum install terraform -y
 			terraform validate
                     terraform plan'''
                 }

@@ -11,3 +11,10 @@ terraform {
 provider "aws" {
   region = "ap-southeast-1"
 }
+
+# aws authotication
+provider "aws" {
+  region     = "ap-southeast-1"
+  access_key = "AKIARXGB6FAMIRV5FSWCy"
+  secret_key = "MxqqoQ7eax8mT0euIlXU0NBJwizPpczuZcKtgIwk"
+}

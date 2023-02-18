@@ -13,6 +13,7 @@ pipeline{
                  steps{
                       sh "mvn clean package"
                 }
+			}
             stage("Create EC2 Manchine"){
                  steps{
                     sh '''terraform validate

@@ -9,20 +9,26 @@ pipeline{
                      git 'https://github.com/rajeshdevopsraja/maven-web-application.git'
                  }
             }
-            stage("build"){
+#            stage("build"){
+#                 steps{
+#                      sh "mvn clean package"
+#                }
+#            }
+#            stage("code quality"){
+#                 steps{
+#                      sh "mvn sonar:sonar"
+#                }
+#            }
+#            stage("deploy"){
+#                 steps{
+#                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://54.251.137.209:8000')], contextPath: '/webapplication', onFailure: false, war: '**/*.war'
+#                }
+#            }
+            stage("Create EC2 Manchine"){
                  steps{
-                      sh "mvn clean package"
+                    sh '''terraform validate
+                    terraform plan'''
                 }
             }
-            stage("code quality"){
-                 steps{
-                      sh "mvn sonar:sonar"
-                }
-            }
-            stage("deploy"){
-                 steps{
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://54.251.137.209:8000')], contextPath: '/webapplication', onFailure: false, war: '**/*.war'
-                }
-            }
-    }
+       }
 }

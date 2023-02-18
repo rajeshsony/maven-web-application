@@ -10,8 +10,8 @@
 # Configure the AWS Provider and authentication
 #provider "aws" {
 #  region = "ap-southeast-1"
-#  access_key = "AKIARXGB6FAMIRV5FSWCy"
-#  secret_key = "MxqqoQ7eax8mT0euIlXU0NBJwizPpczuZcKtgIwk"
+#  access_key = 
+#  secret_key = 
 #}
 
 # Configure the AWS Provider
@@ -28,6 +28,6 @@ terraform {
 
   provider "aws" {
   region = "ap-southeast-1"
-  access_key = "AKIARXGB6FAMIRV5FSWCy"
-  secret_key = "MxqqoQ7eax8mT0euIlXU0NBJwizPpczuZcKtgIwk"
+  access_key = 
+  secret_key = 
 }

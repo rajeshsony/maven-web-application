@@ -29,7 +29,7 @@ img {
 		7 Hills institute, 
 		Anantapur, Andhra Pradesh
 		India, 
-		+91 9949077166,
+		+91 9988776655,
 		7hillsacademyagm@gmail.com
 		<br>
 		<a href="mailto:7hillsacademyagm@gmail.com">Mail 7 Hills </a>

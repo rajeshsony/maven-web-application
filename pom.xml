@@ -147,11 +147,9 @@
 				</configuration>
 			</plugin>
 			
-</plugins>
+        </plugins>
 		<build>
  
 
-	</build>
-	
-	
+		
 </project>

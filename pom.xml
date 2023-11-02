@@ -135,7 +135,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+					<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
@@ -147,7 +147,10 @@
 				</configuration>
 			</plugin>
 			
-        </plugins>
+</plugins>
+	</build>
 	
-		
+	
 </project>
+
+		
